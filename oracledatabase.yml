@@ -42,6 +42,6 @@
   roles:
     - {role: role_common, tags: "role_common"}  
     #- {role: role_cloud, tags: "role_cloud"}  
-    - {role: oracle, tags: "oracle"}
+    - {role: role_oracle, tags: "role_oracle"}
     - {role: role_preend, tags: "preend"}
     - {role: role_end, tags: "role_end"}
