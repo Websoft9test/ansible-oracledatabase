@@ -37,11 +37,12 @@
     
   pre_tasks:
     - debug:
-        msg: Will install ORACLE {{oracle_version}}-{oracle_server}}
+        msg: Will install ORACLE {{oracle_version}}-{{oracle_server}}
 
   roles:
     - {role: role_common, tags: "role_common"}  
-    #- {role: role_cloud, tags: "role_cloud"}  
+    #- {role: role_cloud, tags: "role_cloud"} 
+    - {role: role_jdk, tags: "role_jdk"} 
     - {role: role_oracle, tags: "role_oracle"}
     - {role: role_preend, tags: "preend"}
     - {role: role_end, tags: "role_end"}
